@@ -8,13 +8,13 @@ Uma calculadora de investimentos moderna e responsiva construída com React. Pla
 
 ## Funcionalidades
 
-📱 **Totalmente Responsiva** - Funciona perfeitamente em dispositivos móveis, tablets e desktops
-🎨 **Design Moderno** - Interface limpa e elegante com paleta de cores apropriada para aplicações financeiras
-⚡ **Cálculos em Tempo Real** - Atualizações instantâneas conforme você altera os parâmetros de investimento
-📊 **Gráfico Interativo** - Representação visual do crescimento do investimento ao longo do tempo
-♿ **Acessível** - Construída com HTML semântico e rótulos ARIA adequados
-🔢 **Cálculos Precisos** - Cálculos de juros compostos com contribuições mensais
-🌍 **Suporte Multi-idioma** - Disponível em Português (Brasil) e Inglês
+- 📱 **Totalmente Responsiva** - Funciona perfeitamente em dispositivos móveis, tablets e desktops
+- 🎨 **Design Moderno** - Interface limpa e elegante com paleta de cores apropriada para aplicações financeiras
+- ⚡ **Cálculos em Tempo Real** - Atualizações instantâneas conforme você altera os parâmetros de investimento
+- 📊 **Gráfico Interativo** - Representação visual do crescimento do investimento ao longo do tempo
+- ♿ **Acessível** - Construída com HTML semântico e rótulos ARIA adequados
+- 🔢 **Cálculos Precisos** - Cálculos de juros compostos com contribuições mensais
+- 🌍 **Suporte Multi-idioma** - Disponível em Português (Brasil) e Inglês
 
 ## Parâmetros de Investimento
 
