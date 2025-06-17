@@ -1,0 +1,192 @@
+.exibicao-resultados {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.exibicao-resultados h2 {
+  color: #1e40af;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.grade-resultados {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cartao-resultado {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cartao-resultado:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icone-resultado {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icone-resultado svg {
+  width: 24px;
+  height: 24px;
+}
+
+.total-investido .icone-resultado {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: white;
+}
+
+.juros-totais .icone-resultado {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+}
+
+.valor-final .icone-resultado {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  color: white;
+}
+
+.conteudo-resultado {
+  flex: 1;
+}
+
+.conteudo-resultado h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.valor-resultado {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 0.25rem;
+}
+
+.valor-resultado.final {
+  font-size: 1.75rem;
+  color: #7c3aed;
+}
+
+.percentual-resultado {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.resumo-resultados {
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: white;
+}
+
+.resumo-resultados .estatistica-resumo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.resumo-resultados .estatistica-resumo:last-child {
+  border-bottom: none;
+}
+
+.rotulo-estatistica {
+  font-weight: 500;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.valor-estatistica {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+  .exibicao-resultados {
+    padding: 1.5rem;
+  }
+  
+  .exibicao-resultados h2 {
+    font-size: 1.5rem;
+  }
+  
+  .grade-resultados {
+    gap: 1rem;
+  }
+  
+  .cartao-resultado {
+    padding: 1.25rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+  
+  .icone-resultado {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .icone-resultado svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .valor-resultado {
+    font-size: 1.25rem;
+  }
+  
+  .valor-resultado.final {
+    font-size: 1.5rem;
+  }
+  
+  .resumo-resultados {
+    padding: 1.25rem;
+  }
+  
+  .resumo-resultados .estatistica-resumo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grade-resultados {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .cartao-resultado:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grade-resultados {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+} 

@@ -1,0 +1,202 @@
+.grafico-investimento {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.grafico-investimento h2 {
+  color: #1e40af;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.container-grafico {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1.5rem;
+}
+
+.info-grafico {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.info-grafico p {
+  color: #374151;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.info-grafico ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-grafico li {
+  color: #64748b;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-grafico li:last-child {
+  border-bottom: none;
+}
+
+.info-grafico li::before {
+  content: "•";
+  color: #3b82f6;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.info-grafico strong {
+  color: #1e40af;
+  font-weight: 600;
+}
+
+.tooltip-grafico {
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.ano-tooltip {
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.conteudo-tooltip {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item-tooltip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rotulo-tooltip {
+  font-weight: 500;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.valor-tooltip {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.valor-tooltip.investido {
+  color: #3b82f6;
+}
+
+.valor-tooltip.juros {
+  color: #10b981;
+}
+
+.valor-tooltip.final {
+  color: #8b5cf6;
+}
+
+.legenda-grafico {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.item-legenda {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.cor-legenda {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.rotulo-legenda {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+@media (max-width: 767px) {
+  .grafico-investimento {
+    padding: 1.5rem;
+  }
+  
+  .grafico-investimento h2 {
+    font-size: 1.5rem;
+  }
+  
+  .container-grafico {
+    padding: 1rem;
+  }
+  
+  .info-grafico {
+    padding: 1.25rem;
+  }
+  
+  .legenda-grafico {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .item-legenda {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .item-tooltip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .legenda-grafico {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-grafico {
+    padding: 2rem;
+  }
+  
+  .info-grafico {
+    padding: 2rem;
+  }
+} 

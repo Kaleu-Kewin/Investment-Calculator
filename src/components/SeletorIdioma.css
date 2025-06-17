@@ -1,0 +1,141 @@
+.seletor-idioma {
+  position: relative;
+  display: inline-block;
+}
+
+.botao-idioma {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: #374151;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(10px);
+}
+
+.botao-idioma:hover {
+  background: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+.botao-idioma:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.bandeira-idioma {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.nome-idioma {
+  font-weight: 500;
+}
+
+.seta-idioma {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+}
+
+.seta-idioma.aberto {
+  transform: rotate(180deg);
+}
+
+.dropdown-idioma {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  min-width: 140px;
+  animation: dropdownAparecer 0.2s ease;
+}
+
+@keyframes dropdownAparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.opcao-idioma {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  color: #374151;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-align: left;
+}
+
+.opcao-idioma:hover {
+  background: #f8fafc;
+}
+
+.opcao-idioma.ativo {
+  background: #e0e7ff;
+  color: #1e40af;
+}
+
+.opcao-idioma:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.opcao-idioma:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+.opcao-idioma:only-child {
+  border-radius: 8px;
+}
+
+.icone-verificar {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  color: #1e40af;
+}
+
+@media (max-width: 767px) {
+  .botao-idioma {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8rem;
+  }
+  
+  .bandeira-idioma {
+    font-size: 1rem;
+  }
+  
+  .dropdown-idioma {
+    right: -0.5rem;
+    min-width: 120px;
+  }
+  
+  .opcao-idioma {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.8rem;
+  }
+} 

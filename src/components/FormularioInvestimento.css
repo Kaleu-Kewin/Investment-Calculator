@@ -1,0 +1,179 @@
+.formulario-investimento {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.formulario-investimento h2 {
+  color: #1e40af;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.grade-formulario {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.grupo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.grupo-formulario label {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.obrigatorio {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.wrapper-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-input input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #374151;
+  background: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.wrapper-input input:hover {
+  border-color: #d1d5db;
+}
+
+.wrapper-input input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.sufixo-input {
+  position: absolute;
+  right: 1rem;
+  color: #6b7280;
+  font-weight: 500;
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+
+.texto-ajuda {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.resumo-formulario {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.resumo-formulario h3 {
+  color: #1e40af;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.grade-resumo {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.item-resumo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.item-resumo:last-child {
+  border-bottom: none;
+}
+
+.rotulo-resumo {
+  font-weight: 500;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.valor-resumo {
+  font-weight: 600;
+  color: #1e40af;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 767px) {
+  .formulario-investimento {
+    padding: 1.5rem;
+  }
+  
+  .formulario-investimento h2 {
+    font-size: 1.5rem;
+  }
+  
+  .grade-formulario {
+    gap: 1.25rem;
+  }
+  
+  .wrapper-input input {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .resumo-formulario {
+    padding: 1.25rem;
+  }
+  
+  .item-resumo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grade-formulario {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .grupo-formulario:nth-child(3),
+  .grupo-formulario:nth-child(4) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grade-formulario {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .grupo-formulario:nth-child(3),
+  .grupo-formulario:nth-child(4) {
+    grid-column: 1 / -1;
+  }
+} 

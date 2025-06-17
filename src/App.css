@@ -1,0 +1,141 @@
+.aplicacao {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalho-aplicacao {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.conteudo-cabecalho {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.texto-cabecalho {
+  flex: 1;
+  text-align: center;
+}
+
+.cabecalho-aplicacao h1 {
+  color: #1e40af;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho-aplicacao p {
+  color: #64748b;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.principal-aplicacao {
+  flex: 1;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container-calculadora {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+.rodape-aplicacao {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  text-align: center;
+  color: #64748b;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .cabecalho-aplicacao {
+    padding: 3rem 2rem;
+  }
+  
+  .cabecalho-aplicacao h1 {
+    font-size: 3rem;
+  }
+  
+  .principal-aplicacao {
+    padding: 3rem 2rem;
+  }
+  
+  .container-calculadora {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  
+  .container-calculadora > *:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cabecalho-aplicacao {
+    padding: 4rem 2rem;
+  }
+  
+  .cabecalho-aplicacao h1 {
+    font-size: 3.5rem;
+  }
+  
+  .principal-aplicacao {
+    padding: 4rem 2rem;
+  }
+  
+  .container-calculadora {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+  
+  .container-calculadora > *:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container-calculadora {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .container-calculadora > *:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .conteudo-cabecalho {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .texto-cabecalho {
+    text-align: center;
+  }
+  
+  .cabecalho-aplicacao h1 {
+    font-size: 2rem;
+  }
+  
+  .cabecalho-aplicacao p {
+    font-size: 1rem;
+  }
+} 
