@@ -2,6 +2,10 @@
 
 Uma calculadora de investimentos moderna e responsiva construída com React. Planeje seu futuro financeiro com esta calculadora fácil de usar que mostra o crescimento do investimento ao longo do tempo.
 
+## 🌐 Demo Online
+
+**Acesse o projeto em:** [Calculadora de investimentos](https://investment-calculator-ochre-one.vercel.app/)
+
 ## Funcionalidades
 
 📱 **Totalmente Responsiva** - Funciona perfeitamente em dispositivos móveis, tablets e desktops
