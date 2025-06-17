@@ -4,7 +4,7 @@ Uma calculadora de investimentos moderna e responsiva construída com React. Pla
 
 ## 🌐 Demo Online
 
-**Acesse o projeto em:** [Calculadora de investimentos](https://investment-calculator-ochre-one.vercel.app/)
+**Acesse o projeto em:** [Calculadora de investimentos](https://investment-calculator-pi-lemon.vercel.app/)
 
 ## Funcionalidades
 
