@@ -16,8 +16,8 @@ const GraficoInvestimento = ({ dadosGrafico }) => {
   const { t, idioma } = usarIdioma();
 
   const formatarMoeda = (valor) => {
-    const locale = idioma === 'pt' ? 'pt-BR' : 'en-US';
-    const currency = idioma === 'pt' ? 'BRL' : 'USD';
+    const locale   = idioma === 'pt' ? 'pt-BR' : 'en-US';
+    const currency = idioma === 'pt' ? 'BRL'   : 'USD';
     
     return new Intl.NumberFormat(locale, {
       style: 'currency',
@@ -39,12 +39,14 @@ const GraficoInvestimento = ({ dadosGrafico }) => {
                 {formatarMoeda(payload[0].value)}
               </span>
             </div>
+
             <div className="item-tooltip">
               <span className="rotulo-tooltip">{t.totalInterestEarned}:</span>
               <span className="valor-tooltip juros">
                 {formatarMoeda(payload[1].value)}
               </span>
             </div>
+            
             <div className="item-tooltip">
               <span className="rotulo-tooltip">{t.finalAmount}:</span>
               <span className="valor-tooltip final">

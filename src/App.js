@@ -38,9 +38,9 @@ function ConteudoAplicacao() {
       saldo = saldo * (1 + taxaMensal) + contribuicaoMensal;
       
       if (mes % 12 === 0) {
-        const ano = mes / 12;
+        const ano            = mes / 12;
         const totalInvestido = investimentoInicial + (contribuicaoMensal * mes);
-        const jurosTotais = saldo - totalInvestido;
+        const jurosTotais    = saldo - totalInvestido;
         
         pontosGrafico.push({
           year: ano,
@@ -52,7 +52,7 @@ function ConteudoAplicacao() {
     }
 
     const totalInvestido = investimentoInicial + (contribuicaoMensal * totalMeses);
-    const jurosTotais = saldo - totalInvestido;
+    const jurosTotais    = saldo - totalInvestido;
     
     setResultados({
       totalInvestido,

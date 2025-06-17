@@ -7,7 +7,7 @@ const FormularioInvestimento = ({ dadosFormulario, aoMudarFormulario }) => {
 
   const lidarMudancaInput = (e) => {
     const { name, value } = e.target;
-    const valorNumerico = parseFloat(value) || 0;
+    const valorNumerico   = parseFloat(value) || 0;
     
     aoMudarFormulario({
       ...dadosFormulario,
@@ -16,8 +16,8 @@ const FormularioInvestimento = ({ dadosFormulario, aoMudarFormulario }) => {
   };
 
   const formatarMoeda = (valor) => {
-    const locale = idioma === 'pt' ? 'pt-BR' : 'en-US';
-    const currency = idioma === 'pt' ? 'BRL' : 'USD';
+    const locale   = idioma === 'pt' ? 'pt-BR' : 'en-US';
+    const currency = idioma === 'pt' ? 'BRL'   : 'USD';
     
     return new Intl.NumberFormat(locale, {
       style: 'currency',
@@ -44,6 +44,7 @@ const FormularioInvestimento = ({ dadosFormulario, aoMudarFormulario }) => {
             {t.initialInvestment}
             <span className="obrigatorio" aria-label={t.required}>*</span>
           </label>
+
           <div className="wrapper-input">
             <input
               type="number"
@@ -58,6 +59,7 @@ const FormularioInvestimento = ({ dadosFormulario, aoMudarFormulario }) => {
             />
             <span className="sufixo-input">{obterSufixoMoeda()}</span>
           </div>
+
           <div id="ajuda-investimento-inicial" className="texto-ajuda">
             {t.initialInvestmentHelp}
           </div>
@@ -68,6 +70,7 @@ const FormularioInvestimento = ({ dadosFormulario, aoMudarFormulario }) => {
             {t.monthlyContribution}
             <span className="obrigatorio" aria-label={t.required}>*</span>
           </label>
+
           <div className="wrapper-input">
             <input
               type="number"
@@ -82,6 +85,7 @@ const FormularioInvestimento = ({ dadosFormulario, aoMudarFormulario }) => {
             />
             <span className="sufixo-input">{obterSufixoMoeda()}</span>
           </div>
+
           <div id="ajuda-contribuicao-mensal" className="texto-ajuda">
             {t.monthlyContributionHelp}
           </div>
@@ -92,6 +96,7 @@ const FormularioInvestimento = ({ dadosFormulario, aoMudarFormulario }) => {
             {t.investmentPeriod}
             <span className="obrigatorio" aria-label={t.required}>*</span>
           </label>
+
           <div className="wrapper-input">
             <input
               type="number"
@@ -107,6 +112,7 @@ const FormularioInvestimento = ({ dadosFormulario, aoMudarFormulario }) => {
             />
             <span className="sufixo-input">{t.years}</span>
           </div>
+
           <div id="ajuda-periodo-investimento" className="texto-ajuda">
             {t.investmentPeriodHelp}
           </div>
@@ -117,6 +123,7 @@ const FormularioInvestimento = ({ dadosFormulario, aoMudarFormulario }) => {
             {t.annualInterestRate}
             <span className="obrigatorio" aria-label={t.required}>*</span>
           </label>
+
           <div className="wrapper-input">
             <input
               type="number"
@@ -132,6 +139,7 @@ const FormularioInvestimento = ({ dadosFormulario, aoMudarFormulario }) => {
             />
             <span className="sufixo-input">{t.percent}</span>
           </div>
+
           <div id="ajuda-taxa-juros" className="texto-ajuda">
             {t.interestRateHelp}
           </div>
@@ -145,14 +153,17 @@ const FormularioInvestimento = ({ dadosFormulario, aoMudarFormulario }) => {
             <span className="rotulo-resumo">{t.initialInvestmentLabel}</span>
             <span className="valor-resumo">{formatarMoeda(dadosFormulario.investimentoInicial)}</span>
           </div>
+
           <div className="item-resumo">
             <span className="rotulo-resumo">{t.monthlyContributionLabel}</span>
             <span className="valor-resumo">{formatarMoeda(dadosFormulario.contribuicaoMensal)}</span>
           </div>
+
           <div className="item-resumo">
             <span className="rotulo-resumo">{t.investmentPeriodLabel}</span>
             <span className="valor-resumo">{dadosFormulario.periodoInvestimento} {t.years}</span>
           </div>
+
           <div className="item-resumo">
             <span className="rotulo-resumo">{t.annualInterestRateLabel}</span>
             <span className="valor-resumo">{formatarPercentual(dadosFormulario.taxaJurosAnual)}</span>

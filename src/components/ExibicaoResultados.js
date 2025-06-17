@@ -6,8 +6,8 @@ const ExibicaoResultados = ({ resultados }) => {
   const { t, idioma } = usarIdioma();
 
   const formatarMoeda = (valor) => {
-    const locale = idioma === 'pt' ? 'pt-BR' : 'en-US';
-    const currency = idioma === 'pt' ? 'BRL' : 'USD';
+    const locale   = idioma === 'pt' ? 'pt-BR' : 'en-US';
+    const currency = idioma === 'pt' ? 'BRL'   : 'USD';
     
     return new Intl.NumberFormat(locale, {
       style: 'currency',
@@ -35,6 +35,7 @@ const ExibicaoResultados = ({ resultados }) => {
               <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
             </svg>
           </div>
+
           <div className="conteudo-resultado">
             <h3>{t.totalInvested}</h3>
             <div className="valor-resultado">{formatarMoeda(totalInvestido)}</div>
@@ -50,6 +51,7 @@ const ExibicaoResultados = ({ resultados }) => {
               <path d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4z" />
             </svg>
           </div>
+
           <div className="conteudo-resultado">
             <h3>{t.totalInterestEarned}</h3>
             <div className="valor-resultado">{formatarMoeda(jurosTotais)}</div>
@@ -65,6 +67,7 @@ const ExibicaoResultados = ({ resultados }) => {
               <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
             </svg>
           </div>
+
           <div className="conteudo-resultado">
             <h3>{t.finalAmount}</h3>
             <div className="valor-resultado final">{formatarMoeda(valorFinal)}</div>
@@ -82,12 +85,14 @@ const ExibicaoResultados = ({ resultados }) => {
             {totalInvestido > 0 ? ((valorFinal / totalInvestido - 1) * 100).toFixed(1) : 0}%
           </span>
         </div>
+
         <div className="estatistica-resumo">
           <span className="rotulo-estatistica">{t.interestRatio}</span>
           <span className="valor-estatistica">
             {totalInvestido > 0 ? (jurosTotais / totalInvestido).toFixed(2) : 0}x
           </span>
         </div>
+        
         <div className="estatistica-resumo">
           <span className="rotulo-estatistica">{t.averageAnnualReturn}</span>
           <span className="valor-estatistica">
