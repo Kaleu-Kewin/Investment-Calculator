@@ -28,51 +28,18 @@ Uma calculadora de investimentos moderna e responsiva construída com React. Pla
 
 ## Tecnologias Utilizadas
 
-- **React 18** - React moderno com hooks
+- **React** - React moderno com hooks
 - **Recharts** - Gráficos bonitos e responsivos
-- **CSS3** - Estilização customizada com recursos modernos (sem Tailwind)
-- **HTML Semântico** - Marcação acessível
+- **CSS** - Estilização customizada com recursos modernos (sem Tailwind)
+- **HTML** - Marcação acessível
 - **Design Responsivo** - CSS Grid e Flexbox com media queries
 - **Context API** - Gerenciamento de idioma e estado
-
-## Como Começar
-
-### Pré-requisitos
-
-- Node.js (versão 14 ou superior)
-- npm ou yarn
-
-### Instalação
-
-1. Clone o repositório ou baixe os arquivos
-2. Navegue até o diretório do projeto
-3. Instale as dependências:
-
-```bash
-npm install
-```
-
-4. Inicie o servidor de desenvolvimento:
-
-```bash
-npm start
-```
-
-5. Abra [http://localhost:3000](http://localhost:3000) no seu navegador
-
-### Construindo para Produção
-
-```bash
-npm run build
-```
-
-Isso cria uma build otimizada para produção na pasta `build`.
 
 ## Estrutura do Projeto
 
 ```
 src/
-├── componentes/
+├── components/
 │   ├── FormularioInvestimento.js      # Componente de formulário para parâmetros de entrada
 │   ├── FormularioInvestimento.css     # Estilização do formulário
 │   ├── ExibicaoResultados.js          # Componente de exibição de resultados
@@ -81,11 +48,11 @@ src/
 │   ├── GraficoInvestimento.css        # Estilização do gráfico
 │   ├── SeletorIdioma.js               # Componente seletor de idioma
 │   └── SeletorIdioma.css              # Estilização do seletor de idioma
-├── contextos/
+├── contexts/
 │   └── ContextoIdioma.js              # Contexto de gerenciamento de idioma
 ├── traducoes.js                       # Strings de tradução
-├── Aplicacao.js                       # Componente principal da aplicação
-├── Aplicacao.css                      # Estilização principal da aplicação
+├── App.js                             # Componente principal da aplicação
+├── App.css                            # Estilização principal da aplicação
 ├── index.js                           # Ponto de entrada do React
 └── index.css                          # Estilos globais
 ```
@@ -102,7 +69,6 @@ A aplicação suporta múltiplos idiomas com um seletor de idioma moderno:
 - **Seleção de Idioma Persistente** - Sua escolha de idioma é salva no localStorage
 - **Tradução em Tempo Real** - Todo o texto é atualizado imediatamente quando o idioma é alterado
 - **Seletor de Idioma Acessível** - Navegação por teclado e suporte a leitores de tela
-- **Ícones de Bandeira** - Identificação visual de idioma com bandeiras de países
 
 ## Recursos de Design
 
@@ -118,38 +84,6 @@ A aplicação suporta múltiplos idiomas com um seletor de idioma moderno:
 - **Desktop**: ≥ 1024px
 - **Desktop Grande**: ≥ 1440px
 
-### Recursos de Acessibilidade
-- Estrutura HTML semântica
-- Rótulos e descrições ARIA
-- Suporte à navegação por teclado
-- Esquema de cores de alto contraste
-- Indicadores de foco
-- Amigável para leitores de tela
-- Suporte multi-idioma com atributos de idioma apropriados
-
-## Suporte a Navegadores
-
-- Chrome (última versão)
-- Firefox (última versão)
-- Safari (última versão)
-- Edge (última versão)
-
-## Licença
-
-Este projeto é de código aberto e está disponível sob a [Licença MIT](LICENSE).
-
 ## Contribuindo
 
 Sinta-se à vontade para enviar issues e solicitações de melhorias!
-
-### Adicionando Novos Idiomas
-
-Para adicionar um novo idioma:
-
-1. Adicione o código do idioma e traduções ao `src/traducoes.js`
-2. Atualize o seletor de idioma em `src/componentes/SeletorIdioma.js`
-3. Teste a tradução completamente
-
----
-
-**Planeje com sabedoria, invista com inteligência.** 💰📈 
