@@ -74,14 +74,6 @@ A aplicação suporta múltiplos idiomas com um seletor de idioma moderno:
 - **Tradução em Tempo Real** - Todo o texto é atualizado imediatamente quando o idioma é alterado
 - **Seletor de Idioma Acessível** - Navegação por teclado e suporte a leitores de tela
 
-## Recursos de Design
-
-### Paleta de Cores
-- **Azul Primário**: #1e40af (confiável, financeiro)
-- **Verde de Sucesso**: #10b981 (crescimento, retornos positivos)
-- **Roxo de Destaque**: #8b5cf6 (premium, sofisticado)
-- **Cinzas Neutros**: Várias tonalidades para texto e fundos
-
 ### Breakpoints Responsivos
 - **Mobile**: < 768px
 - **Tablet**: 768px - 1023px
